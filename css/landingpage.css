@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url("BackgroundImages/mountain.jpg");
+    background-repeat: no-repeat;
+    display: table; /* oben der platz ist weck */
+    background-size: cover;
+    overflow: hidden;
+}
+
+.intro .inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10% !important;
+}
+.par{
+    padding: 10px;
+}
+
+.btn{
+    font-family: Arial, serif;
+    background: none;
+    font-size: 135%;
+    font-weight: 400;
+    color: #fcf8e3;
+    text-decoration: none;
+    text-transform: uppercase;
+    border:  2px solid #fcf8e3;
+    padding: 10px 20px;
+    border-radius: 11px;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    color: #c4e3f3 ;
+    border: solid  #c4e3f3 2px;
+}
+
+.wrapper{
+    margin: 50px 20px;
+    border-radius: 20px;
+    padding-top: 10px !important;
+    padding-bottom: 10px;
+    box-shadow: 0 0 40px 2px rgba(111,168,193, 0.30);
+    background-color: rgba(0, 0, 0, 0) !important
+}
+
+/* Content */
+.main-conten{
+}
+
+/* About us*/
+
+.about{
+    padding: 2% 10%;
+    text-align: center !important;
+
+}
+
+.titel{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #4c5b72;
+    text-transform: uppercase;
+    font-size: 35px;
+    word-spacing: 6px;
+    letter-spacing: 3px;
+    font-family: Roboto, serif;
+}
+
+.logo3{
+    float: left;
+    margin-right: 10px;
+    width: 30%;
+}
+.logo3 img{
+    width: 100%;
+}
+.btn2{
+    font-family: Arial, serif;
+    background: none;
+    font-size: 135%;
+    font-weight: 400;
+    color: #4c5b72;
+    text-decoration: none;
+    text-transform: uppercase;
+    border:  2px solid #4c5b72;
+    padding: 10px 20px;
+    border-radius: 11px;
+    transition: all 0.5s;
+}
+
+.btn2:hover{
+    color: #c4e3f3 ;
+    border: solid  #c4e3f3 2px;
+}
+ .text{
+     margin-top: 5px;
+     font-size: 25px;
+     font-family: Arial, serif;
+     margin-left: 20px;
+
+ }
+
+ /*Info Teil*/
+
+.info{
+    /*background-color: #4c5b72;*/
+    padding: 2% 10%;
+    text-align: center !important;
+}
+
+.logo2{
+    float: right;
+    margin-left: 10px;
+    width: 30%;
+}
+
+.logo2 img{
+    width: 100%;
+}
+
+.examples{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.example-item{
+    width: 30%;
+}
+.example-item img{
+    width: 100%;
+    margin-right: 5px;
+}
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+    .content{
+        padding-bottom: 30%;
+    }
+    .content img{
+         max-width: 85%;
+    }
+    .btn{
+        font-size: 110%;
+        padding: 9px 17px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .content{
+        padding-bottom: 40%;
+    }
+    .content img{
+        max-width: 80%;
+    }
+    .btn{
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .content{
+        padding-bottom: 50%;
+    }
+    .content img{
+        max-width: 90%;
+    }
+    .btn{
+        font-size: 75%;
+        padding: 6px 14px;
+    }
+}
+
