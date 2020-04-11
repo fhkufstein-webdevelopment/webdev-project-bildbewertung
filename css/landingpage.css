@@ -3,7 +3,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: hidden;
+    /* overflow: hidden;*/
 }
 
 html, body{
@@ -11,7 +11,12 @@ html, body{
     padding: 0;
     height: 100%;
     width: 100%;
+    text-decoration: none;
 }
+
+
+/* ----------------------Landing Screen----------------------*/
+
 
 .intro{
     height: 100%;
@@ -21,7 +26,6 @@ html, body{
     background-repeat: no-repeat;
     display: table; /* oben der platz ist weck */
     background-size: cover;
-    overflow: hidden;
 }
 
 .intro .inner{
@@ -37,6 +41,7 @@ html, body{
     text-align: center;
     padding-bottom: 10% !important;
 }
+
 .par{
     padding: 10px;
 }
@@ -60,47 +65,83 @@ html, body{
     border: solid  #c4e3f3 2px;
 }
 
+
+/* ----------------------Navigation----------------------*/
+
+
+/*Nav Bar */
+.navbar-toggler{
+    outline: none;
+    padding: 0;
+}
+
+.navbar-toggler img{
+    width: 37px;
+}
+
+.navbar-brand img{
+    width: 200px;
+}
+
+.navbar {
+    background-color: #FFFFFF !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.nav-link{
+    color: #245269 !important;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+
+/* ----------------------About Us----------------------*/
 .wrapper{
-    margin: 50px 20px;
-    border-radius: 20px;
-    padding-top: 10px !important;
+    margin: 40px 20px;
+    border-radius: 40px;
+    padding-top: 10px ;
     padding-bottom: 10px;
-    box-shadow: 0 0 40px 2px rgba(111,168,193, 0.30);
-    background-color: rgba(0, 0, 0, 0) !important
+    box-shadow: 0 0 40px 2px rgba(111,168,193, 0.50);
+    background-color: rgba(120, 0, 0, 0);
 }
-
-/* Content */
-.main-conten{
-}
-
-/* About us*/
 
 .about{
-    padding: 2% 10%;
+    padding: 5% 10%;
     text-align: center !important;
 
 }
 
 .titel{
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #4c5b72;
     text-transform: uppercase;
     font-size: 35px;
     word-spacing: 6px;
-    letter-spacing: 3px;
-    font-family: Roboto, serif;
+    letter-spacing: 1.5px;
+    font-family: Arial, serif;
 }
 
 .logo3{
     float: left;
-    margin-right: 10px;
-    width: 30%;
+    padding-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 25%;
 }
 .logo3 img{
     width: 100%;
 }
-.btn2{
+
+.button {
+    display:inline-block;
+    justify-content: center;
+    text-align: right!important;
+
+}
+
+.btn3{
     font-family: Arial, serif;
     background: none;
     font-size: 135%;
@@ -114,10 +155,33 @@ html, body{
     transition: all 0.5s;
 }
 
-.btn2:hover{
+.btn3:hover{
     color: #c4e3f3 ;
     border: solid  #c4e3f3 2px;
+    text-decoration: none !important;
 }
+
+.btn2{
+    font-family: Arial, serif;
+    background: #4c5b72;
+    font-size: 135%;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    border:  2px solid #4c5b72;
+    padding: 10px 20px;
+    border-radius: 11px;
+    transition: all 0.5s;
+}
+
+.btn2:hover{
+    color: #c4e3f3 ;
+    background-color: #FFFFFF;
+    border: solid  #c4e3f3 2px;
+    text-decoration: none !important;
+}
+
  .text{
      margin-top: 5px;
      font-size: 25px;
@@ -126,7 +190,9 @@ html, body{
 
  }
 
- /*Info Teil*/
+
+/* ----------------------Info Teil----------------------*/
+
 
 .info{
     /*background-color: #4c5b72;*/
@@ -137,11 +203,6 @@ html, body{
 .logo2{
     float: right;
     margin-left: 10px;
-    width: 30%;
-}
-
-.logo2 img{
-    width: 100%;
 }
 
 .examples{
@@ -156,8 +217,80 @@ html, body{
     width: 100%;
     margin-right: 5px;
 }
+.wrapper2 p{
+    margin: 40px 20px;
+    border-radius: 20px;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    box-shadow: 0 0 40px 2px rgba(111,168,193, 0.50);
+    background-color: rgba(120, 0, 0, 0);
+}
 
-/*--- Media Queries --*/
+
+/* ----------------------Footer----------------------*/
+
+
+.footer{
+    width: 100%;
+    display: block;
+    padding: 60px 0;
+    box-sizing: border-box;
+    background-color: #18181a;
+}
+.inner-footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+
+}
+.inner-footer .logo-container{
+    display: block;
+    width: 35%;
+    float: left;
+    height: 100%;
+}
+.inner-footer .logo-container img{
+    width: 20%;
+    height: auto;
+
+}
+.inner-footer .footer-Links{
+    margin-right: 10px;
+    padding-left: 50px;
+    float: right !important;
+    height: 200px;
+}
+
+.inner-footer .footer-links h1{
+    font-family: Arial, serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.inner-footer .footer-links a{
+    font-family: Arial, serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: flex;
+    font-weight: 200;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    text-decoration: none;
+    float: left;
+}
+/*
+.footer-liste ul{
+    display: flex;
+    float: right;
+}*/
+
+
+/* ----------------------Media Query----------------------*/
+
+
 @media screen and (max-width: 900px) {
     .content{
         padding-bottom: 30%;
