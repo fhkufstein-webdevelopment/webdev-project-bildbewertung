@@ -1,0 +1,108 @@
+/*des is des hintergrundbild*/
+.desishintergrundbild{
+    background: transparent url("BackgroundImages/login-hintergrund.jpg") no-repeat 0 0;
+    height: 1600px;
+    width: 100%;
+    background-size: 100%;
+}
+/*des is der titel*/
+.name{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    font-family: Arial, serif;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px black;
+}
+/*des is der text unter der überschrift*/
+.col-xs-13{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    color: white;
+    font-family: Arial, serif;
+    font-size: 20px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px black;
+}
+/*des is der text zum benutzernamen eingabefeld*/
+.col-md-2{
+    position: absolute;
+    top: 50%;
+    left: 42.3%;
+    font-family: Arial, serif;
+    font-size: 18px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px black;
+}
+/*des is der text zum passwort eingabefeld*/
+.col-md-3{
+    position: absolute;
+    top: 54%;
+    left: 44%;
+    font-family: Arial, serif;
+    font-size: 18px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px black;
+}
+/*benutzernamen eingabefeld*/
+.benutzername{
+    position: absolute;
+    top: 50%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    border:  2px solid white;
+    color: #2194E0;
+    font-weight:400;
+    border-radius: 11px;
+    text-align: center;
+    background: none;
+
+}
+/*passwort eingabefeld*/
+.passwort{
+    position: absolute;
+    top: 54%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    border: 2px solid white;
+    color: black;
+    font-weight:400;
+    border-radius: 11px;
+    text-align: center;
+    background: none;
+}
+
+/*des is der link zur anmeldung*/
+.registerOverlay{
+    text-decoration: #3e8f3e;
+    color: #2194E0;
+    transform: translate(-50%, -50%);
+    border: 2px solid #2194E0;
+    border-radius: 11px;
+    margin: 6px;
+    padding: 5px 10px;
+
+
+}
+
+::placeholder{
+    color: black;
+
+}
+
