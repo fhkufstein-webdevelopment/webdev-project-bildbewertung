@@ -1,4 +1,5 @@
 
+/*
 $("doucment").ready(function() {
   const nav = document.querySelector("#menu");
   const topOfNav = nav.OffsetTop;
@@ -6,4 +7,4 @@ $("doucment").ready(function() {
     console.log(topOfNav);
   };
   window.addEventListener("scroll", fixNav());
-});
+}); Versuch, Navigation mitwandern zulassen*/
