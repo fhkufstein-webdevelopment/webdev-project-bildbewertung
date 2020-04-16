@@ -36,9 +36,9 @@
 .col-md-2{
     position: absolute;
     top: 50%;
-    left: 42.3%;
+    left: 40.3%;
     font-family: Arial, serif;
-    font-size: 18px;
+    font-size: 19px;
     color:white;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -49,9 +49,9 @@
 .col-md-3{
     position: absolute;
     top: 54%;
-    left: 44%;
+    left: 42%;
     font-family: Arial, serif;
-    font-size: 18px;
+    font-size: 19px;
     color:white;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -65,27 +65,26 @@
     left: 57.5%;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    border:  2px solid white;
-    color: #2194E0;
-    font-weight:400;
-    border-radius: 11px;
-    text-align: center;
-    background: none;
-
-}
-/*passwort eingabefeld*/
-.passwort{
-    position: absolute;
-    top: 54%;
-    left: 57.5%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    border: 2px solid white;
+    border:  2px solid black;
     color: black;
     font-weight:400;
     border-radius: 11px;
     text-align: center;
-    background: none;
+    background: white;
+}
+/*passwort eingabefeld*/
+.passwort{
+    position: absolute;
+    top: 53.9%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    border: 2px solid black;
+    color: black;
+    font-weight:400;
+    border-radius: 11px;
+    text-align: center;
+    background: white;
 }
 
 /*des is der link zur anmeldung*/
@@ -96,13 +95,156 @@
     border: 2px solid #2194E0;
     border-radius: 11px;
     margin: 6px;
-    padding: 5px 10px;
-
-
+    padding: 2.5px 5px;
 }
 
 ::placeholder{
     color: black;
-
+    font-size: 70%;
+    text-align: center;
 }
 
+.wrapper{
+    text-align: center;
+}
+
+/*zeug fürs Registrieren*/
+
+/*überschrift*/
+
+.registerüberschrift{
+    position: absolute;
+    top: 144%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 50px;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    font-family: Arial, serif;
+    font-weight: 700;
+    text-shadow: 0 0 5px black;
+    color: white;
+}
+
+/*unterschrift*/
+.registerunterschrift{
+    position: absolute;
+    top: 162%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+/*text zum benutzername*/
+.reisterbenutzertext{
+    position: absolute;
+    top: 180%;
+    left: 42.3%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, serif;
+    font-size: 19px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px black;
+}
+/*text zum passwort*/
+.reisterpassworttext{
+    position: absolute;
+    top: 183.9%;;
+    left: 44.21%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, serif;
+    font-size: 19px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px black;
+}
+/*text zum passwort 2*/
+.reisterpassworttext2{
+    position: absolute;
+    top: 187.8%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, serif;
+    font-size: 19px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px black;
+}
+/*benutzername eingabe*/
+.registerbenutzername{
+    position: absolute;
+    top: 180%;
+    left: 60.5%;
+    transform: translate(-50%, -50%);
+    border-radius: 11px;
+    font-size: 20px;
+    text-align: center;
+    border:  2px solid black;
+}
+/*passwort eingabe*/
+.registerpasswort{
+    position: absolute;
+    top: 183.9%;
+    left: 60.5%;
+    transform: translate(-50%, -50%);
+    border-radius: 11px;
+    font-size: 20px;
+    text-align: center;
+    border:  2px solid black;
+}
+/*passwort2 eingabe*/
+.registerpasswort2{
+    position: absolute;
+    top: 187.8%;
+    left: 60.5%;
+    transform: translate(-50%, -50%);
+    border-radius: 11px;
+    font-size: 20px;
+    text-align: center;
+    border:  2px solid black;
+}
+/*abbrechenbutton*/
+.jojojo{
+    position: absolute;
+    top: 200%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    background: yellow;
+    background: linear-gradient(to bottom, ghostwhite, white);
+    box-shadow: inset 0px 0px 6px #fff,inset 0px -1px 6px #fff;
+    border: 2px solid black;
+    border-radius: 1em;
+    margin: 1em;
+    text-align: center;
+}
+.jojojo:hover,
+.jojojo:focus {
+    box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/*registrierenbutton*/
+.jajaja{
+    position: absolute;
+    top: 200%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    background: yellow;
+    background: linear-gradient(to bottom, ghostwhite, white);
+    box-shadow: inset 0px 0px 6px #fff,inset 0px -1px 6px #fff;
+    border: 2px solid black;
+    border-radius: 1em;
+    margin: 1em;
+    text-align: center;
+}
+ .jajaja:hover,
+ .jajaja:focus {
+     box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+ }

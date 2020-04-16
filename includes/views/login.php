@@ -23,7 +23,7 @@ echo $this->header;
                 <!--Benutzername Eingabefled-->
                 <div class="form-group">
                     <label for="username" class="col-md-2">Benutzername</label>
-                    <input type="text" name="username" id="username" class="benutzername" value="" placeholder=""
+                    <input type="text" name="username" id="username" class="benutzername" value="" placeholder="Benutzernamen eingeben">
                 </div>
                 </div>
                 <!--(alte benutzername eingabe)<div class="form-group">
@@ -36,9 +36,8 @@ echo $this->header;
                 <!--Passwort Eingabefeld-->
                 <div class="form-group">
                     <label for="password" class="col-md-3">Passwort</label>
-                    <div class="passwort">
-                        <input type="password" name="password" id="password" class="passwort" value="" placeholder="">
-                    </div>
+                    <input type="password" name="password" id="password" class="passwort" value="" placeholder="Passwort eingeben">
+                </div>
                 </div>
                 <!--(alte passworteingabe)<div class="form-group">
                     <label for="password" class="col-xs-12 col-md-2">Passwort</label>
@@ -47,8 +46,9 @@ echo $this->header;
                     </div>
                 </div>-->
                 <div class="wrapper">
-                    <button type="submit" class="button">Anmelden</button>
-                    !--<input type="hidden" name="action" value="login">
+                    <button style="height: 100%; width: 100%; text-align: center" type="submit" class="button">Anmelden</button>
+                    <input type="hidden" name="action" value="login">
+                    <!--<input style="height: 100px; width: 200px;" type="reset" value="DEL" />-->
                     <!--(alter anmeldebutton)<button type="submit" class="btn btn-default">Anmelden</button>
                 <input type="hidden" name="action" value="login">-->
                     <!--des is für den Anmeldebutton-->
@@ -61,34 +61,37 @@ echo $this->header;
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="registerModalLabel">Registrierung</h4>
+                <!--Überschrift-->
+                <h4 class="registerüberschrift" id="registerModalLabel">Registrierung</h4>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <p class="col-xs-12">
+                    <p class="registerunterschrift">
+                        <!--Unterschrift-->
                         Wir benötigen folgende Angaben um Sie für unseren Dienst registrieren zu können:
                     </p>
                     <form method="post" action="login" class="col-xs-12">
                         <div class="form-group">
-                            <label for="name">Benutzername:</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Benutzernamen eingeben">
+                            <label class="reisterbenutzertext" for="name">Benutzername:</label>
+                            <input type="text" class="registerbenutzername" name="name" id="name" placeholder="Benutzernamen eingeben">
                         </div>
                         <div class="form-group">
-                            <label for="pwd">Passwort (mindestens 8 Zeichen):</label>
-                            <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Bitte Passwort eingeben (mind. 8 Zeichen)">
+                            <label class="reisterpassworttext" for="pwd">Passwort:</label>
+                            <input type="password" name="pwd" class="registerpasswort" id="pwd" placeholder="mind. 8 Zeichen">
                         </div>
                         <div class="form-group">
-                            <label for="pwd2">Passwort (wiederholen):</label>
-                            <input type="password" name="pwd2" class="form-control" id="pwd2" placeholder="Bitte das Passwort wiederholen">
+                            <label class="reisterpassworttext2" for="pwd2">Passwort wiederholen:</label>
+                            <input type="password" name="pwd2" class="registerpasswort2" id="pwd2" placeholder="Passwort wiederholen">
                         </div>
                         <input type="hidden" name="action" value="register">
                     </form>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Abbraechen</button>
-                <button type="button" class="btn btn-primary">Registrieren</button>
+            <div class="abbrechenbutton">
+                <button type="button" class="jojojo" data-dismiss="modal">Abbraechen</button>
+            </div>
+            <div class="registrierenbutton">
+                <button type="button" class="jajaja">Registrieren</button>
             </div>
         </div>
     </div>
