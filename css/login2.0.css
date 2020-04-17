@@ -207,44 +207,43 @@
     text-align: center;
     border:  2px solid black;
 }
-/*abbrechenbutton*/
-.jojojo{
+/*registrierenbutton*/
+.modal-footer{
     position: absolute;
     top: 200%;
-    left: 43%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 60px;
-    background: yellow;
-    background: linear-gradient(to bottom, ghostwhite, white);
-    box-shadow: inset 0px 0px 6px #fff,inset 0px -1px 6px #fff;
-    border: 2px solid black;
-    border-radius: 1em;
-    margin: 1em;
-    text-align: center;
-}
-.jojojo:hover,
-.jojojo:focus {
-    box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
-/*registrierenbutton*/
-.jajaja{
+/*abmeldebutton*/
+.abmeldebutton{
     position: absolute;
-    top: 200%;
-    left: 57%;
+    top: 65%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 60px;
-    background: yellow;
-    background: linear-gradient(to bottom, ghostwhite, white);
-    box-shadow: inset 0px 0px 6px #fff,inset 0px -1px 6px #fff;
-    border: 2px solid black;
-    border-radius: 1em;
-    margin: 1em;
-    text-align: center;
+    font-size: 25px;
 }
- .jajaja:hover,
- .jajaja:focus {
-     box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
- }
+/*angemeldetals*/
+.angemeldetals{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+/*logouterfolgreich*/
+.logouterfolgreich{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+/*siesindabgemeldet*/
+.siesindabgemeldet{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}

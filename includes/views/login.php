@@ -87,12 +87,16 @@ echo $this->header;
                     </form>
                 </div>
             </div>
-            <div class="abbrechenbutton">
-                <button type="button" class="jojojo" data-dismiss="modal">Abbraechen</button>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Registrieren</button>
             </div>
-            <div class="registrierenbutton">
-                <button type="button" class="jajaja">Registrieren</button>
+            <!--alte buttons-->
+            <!--<div class="ucab">
+                <button type="button" class="abbruchbutton" data-dismiss="modal">Abbraechen</button>
             </div>
+            <div class="ucrb">
+                <button type="button" class="registrierbutton">Registrieren</button>
+            </div>-->
         </div>
     </div>
 </div>

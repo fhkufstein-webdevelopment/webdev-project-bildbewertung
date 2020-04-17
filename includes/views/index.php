@@ -6,7 +6,7 @@ echo $this->header;
 <div id="main">
     <div class="row">
 
-        <button class="btn btn-primary" data-toggle="modal" data-target="#editModal"><i class="glyphicon glyphicon-plus"></i> Neue Adresse anlegen</button>
+        <!--<button class="btn btn-primary" data-toggle="modal" data-target="#editModal"><i class="glyphicon glyphicon-plus"></i> Neue Adresse anlegen</button>-->
 
         <?php if($this->addresses): ?>
         <table class="table table-striped">
@@ -34,8 +34,8 @@ echo $this->header;
             </tbody>
         </table>
         <?php else: ?>
-                <p>&nbsp;</p>
-                <div class="alert alert-info">Noch keine Adressen vorhanden - Sie können über den Button <strong>Neue Adresse anlegen</strong> eine neue Adresse Ihrer Adressverwaltung hinzufügen.</div>
+                <!--<p>&nbsp;</p>
+                <div class="alert alert-info">Noch keine Adressen vorhanden - Sie können über den Button <strong>Neue Adresse anlegen</strong> eine neue Adresse Ihrer Adressverwaltung hinzufügen.</div>-->
         <?php endif; ?>
 
     </div>
@@ -47,15 +47,15 @@ echo $this->header;
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
                 <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-                <button type="button" class="btn btn-primary"></button>
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+                <button type="button" class="btn btn-primary"></button>-->
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

@@ -14,10 +14,7 @@
 	<?php if($this->current == "login"): ?>
 		<link href="css/login2.0.css" rel="stylesheet">
 	<?php endif; ?>
-
 		<link href="css/login2.0.css" rel="stylesheet">
-
-
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -39,7 +36,7 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
+					<!--<div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
@@ -47,21 +44,15 @@
                             <span class="icon-bar"></span>
                         </button>
 						<a href="/" class="navbar-brand active">Adressverwaltung</a>
-					</div>
-
+					</div>-->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="logout">(Abmelden)</a></li>
+						<ul>
+							<a class="abmeldebutton" href="logout">Abmelden</a>
 						</ul>
-
-						<p class="navbar-text navbar-right">Angemeldet als <strong class="username"><?php echo $this->username; ?></strong></p>
-
+						<p class="angemeldetals">Angemeldet als: <strong class="username"><?php echo $this->username; ?></strong></p>
 					</div>
 				</div>
 			</nav>
-
 		<?php endif; ?>
 	</div>
 </body>
