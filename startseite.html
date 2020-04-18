@@ -2,21 +2,18 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <title>LandingPage für STW</title>
+    <title>Show the World-Startseite</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <!-- Normal css -->
-    <link rel="stylesheet" type="text/css" href="css/landingpage.css">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/startseite.css">
+    <!-- Animate.css-->
     <link href="css/animate.css" rel="stylesheet"/>
     <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
     <script src="js/waypoints.js" type="text/javascript"></script>
-    <script src="js/landingpage.js"></script>
+
 
 </head>
 <body>
@@ -34,7 +31,9 @@
         </section>
     </section>
 
-    <!-- -->
+    <!-- Main content -->
+
+        <!-- Nav bar -->
 
     <div id="menu">
         <div class="container" >
@@ -46,13 +45,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto text-right">
                         <li class="nav-item">
-                            <a class="nav-link" href="landingpage.html">Home</a>
+                            <a class="nav-link" href="startseite.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ratingAnything.html">Voting</a>
+                            <a class="nav-link" href="ratingPages/ratingAnything.html">Voting</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="mailto:ShowThe@world.com?subject=Request%20from%20STW%20Website">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -60,14 +59,11 @@
         </div>
     </div>
 
-    <!-- -->
         <!-- About-->
 
     <div id="main" class="main-conten">
         <div class="wrapper">
             <div class="about" id="about">
-
-                <!-- -->
 
                 <section class="os-animation" data-os-animation="pulse"  data-os-animation-delay="0s">
                         <img src="images/show%20the%20world.png" alt="Logo3" class="logo3">
@@ -77,13 +73,13 @@
                     The Platform that lives up to your expectations
                 </h2>
                 <p class="text">
-                    Have you ever wondered if your outfit looks good? Or needed a second opinion on your panting?
+                    Have you ever wondered if your outfit looks good? Or needed a second opinion on your painting?
                     If that is the case, this is the right place for YOU. You can easily get other opinions on things you created,
                     or post it just for fun. It is up to you.
                 </p>
                 <div class="button">
-                    <a type="button" class="btn2 btn-default btn-lg" href="ratingSelfies.html"> Start Now </a>
-                    <button type="button" class="btn3 btn-default btn-lg" onClick="document.getElementById('info').scrollIntoView();">Choose Category</button>
+                    <a type="button" class="btn2 btn-default btn-lg" href="ratingPages/ratingSelfies.html"> Start Now </a>
+                    <button type="button" class="btn3 btn-default btn-lg" onClick="document.getElementById('categories').scrollIntoView();">Choose Category</button>
                 </div>
             </div>
         </div>
@@ -97,19 +93,19 @@
                 <p class="text">
                     You can choose to visit different categories: Art, Food and basically everything else.
                 </p>
-                <div class="categories">
+                <div class="categories" id="categories">
                     <div class="categories-item">
-                        <a href="ratingArt.html">
+                        <a href="ratingPages/ratingArt.html">
                             <img src="images/Art_STW_weiß.png" alt="Art">
                         </a>
                     </div>
                     <div class="categories-item">
-                        <a href="ratingSelfies.html">
+                        <a href="ratingPages/ratingSelfies.html">
                             <img src="images/Food_STW%20-%20Kopie.png" alt="Example1">
                         </a>
                     </div>
                     <div class="categories-item">
-                        <a href="ratingAnything.html">
+                        <a href="ratingPages/ratingAnything.html">
                             <img src="images/Random_STW.png" alt="Random">
                         </a>
                     </div>
@@ -127,9 +123,9 @@
                 <img src="images/Show%20the%20weorl%20schrift.png" alt="logo">
             </div>
             <div class="footer-links">
-                <a href="#">Need Help?</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Terms & Conditions</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="mailto:ShowThe@world.com?subject=Request%20from%20STW%20Website">Contact Us</a>
+                <a href="terms&conditions.html">Terms & Conditions</a>
             </div>
         </div>
     </div>

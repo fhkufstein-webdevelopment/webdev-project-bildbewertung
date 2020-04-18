@@ -138,8 +138,10 @@ html, body{
 }
 
 .button {
+    margin-top: 20px;
     display:inline-block;
-    justify-content: center;
+    justify-content: left!important;
+
 }
 
 .btn3{
@@ -293,7 +295,7 @@ html, body{
 }
 .inner-footer .footer-links a:first-child{
     color: #c4e3f3;
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 
 

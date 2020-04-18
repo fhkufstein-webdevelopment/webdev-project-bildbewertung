@@ -1,0 +1,33 @@
+ul li{
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+    color: #18181a;
+}
+.logo{
+
+    width: 400px;
+    display: block;
+    margin: 20px auto;
+}
+
+h2{
+    color: #4c5b72;
+    text-transform: uppercase;
+    font-size: 55px;
+    word-spacing: 6px;
+    font-family: Arial, serif
+}
+h3{
+
+    color: #4c5b72;
+    text-transform: uppercase;
+    font-size: 55px;
+    word-spacing: 6px;
+    font-family: Arial, serif
+}
+.container{
+    margin: 60px auto;
+}
