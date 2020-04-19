@@ -31,13 +31,12 @@ allCards.forEach(function (el) {
         tinderContainer.classList.toggle('tinder_love', event.deltaX > 0);
         tinderContainer.classList.toggle('tinder_nope', event.deltaX < 0);
 
-        var xMulti = event.deltaX * 0.03;
-        var yMulti = event.deltaY / 80;
+        var xMulti = event.deltaX;
+        var yMulti = event.deltaY;
         var rotate = xMulti * yMulti;
 
         event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
     });
-
     hammertime.on('panend', function (event) {
         el.classList.remove('moving');
         tinderContainer.classList.remove('tinder_love');
