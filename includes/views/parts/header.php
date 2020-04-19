@@ -26,20 +26,20 @@
 	<?php endif; ?>
 </head>
 <body>
-	<div class="inner">
-		<div class="logo">
-                <div class="name">Show The World</div>
-		</div>
-		<?php if(LOGGED_IN == true): ?>
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<a class="abmeldebutton" href="logout" style="text-decoration: none;">Abmelden</a>
-						<p class="angemeldetals">Angemeldet als: <strong class="username"><?php echo $this->username; ?></strong></p>
-					</div>
-				</div>
-			</nav>
-		<?php endif; ?>
-	</div>
+    <div class="inner">
+        <div class="logo">
+            <div class="name">Show The World</div>
+        </div>
+            <?php if(LOGGED_IN == true): ?>
+        <div class="abmeldenwrapper">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <a class="abmeldebutton" href="logout" style="text-decoration: none;">Abmelden</a>
+                    <p class="angemeldetals">Angemeldet als: <strong class="username"><?php echo $this->username; ?></strong></p>
+                </div>
+            </div>
+        </div>
+            <?php endif; ?>
+    </div>
 </body>
 </html>
