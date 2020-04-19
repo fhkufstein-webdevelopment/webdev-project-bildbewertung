@@ -3,6 +3,8 @@ var allCards = document.querySelectorAll('.tinder--card');
 var nope = document.getElementById('nope');
 var love = document.getElementById('love');
 
+/*--------------------------------------------------*/
+
 function initCards(card, index) {
     var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
 
@@ -14,6 +16,8 @@ function initCards(card, index) {
 
     tinderContainer.classList.add('loaded');
 }
+
+/*--------------------------------------------------*/
 
 initCards();
 
@@ -31,8 +35,8 @@ allCards.forEach(function (el) {
         tinderContainer.classList.toggle('tinder_love', event.deltaX > 0);
         tinderContainer.classList.toggle('tinder_nope', event.deltaX < 0);
 
-        var xMulti = event.deltaX;
-        var yMulti = event.deltaY;
+        var xMulti = event.deltaX * 0.03;
+        var yMulti = event.deltaY / 80;
         var rotate = xMulti * yMulti;
 
         event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
@@ -64,6 +68,8 @@ allCards.forEach(function (el) {
     });
 });
 
+/*--------------------------------------------------*/
+
 function createButtonListener(love) {
     return function (event) {
         var cards = document.querySelectorAll('.tinder--card:not(.removed)');
@@ -86,6 +92,8 @@ function createButtonListener(love) {
         event.preventDefault();
     };
 }
+
+/*--------------------------------------------------*/
 
 var nopeListener = createButtonListener(false);
 var loveListener = createButtonListener(true);
