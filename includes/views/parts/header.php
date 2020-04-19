@@ -8,11 +8,11 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
+    <link href="css/login2.css" rel="stylesheet">
 	<?php if($this->current == "login"): ?>
-		<link href="css/login.css" rel="stylesheet">
+		<link href="css/login2.css" rel="stylesheet">
 	<?php endif; ?>
-		<link href="css/login.css" rel="stylesheet">
+		<link href="css/login2.css" rel="stylesheet">
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 

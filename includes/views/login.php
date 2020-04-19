@@ -4,7 +4,7 @@ echo $this->header;
 /*des is für den text*/
 ?>
 <div id="main">
-    <div class="loginhintergrund">
+    <div class="loginhintergrund"></div>
         <div class="row">
             <div class="logo">
                 <div id="zumanfang"class="name">Show The World</div>
@@ -42,8 +42,7 @@ echo $this->header;
                     </div>
                 </form>
             </div>
-        </div>
-    </div>
+</div>
     <br><br>
     <div class="modal fade <?php if($registerError):?> in<?php endif; ?>" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel">
     <div class="modal-dialog" role="document">
@@ -55,6 +54,10 @@ echo $this->header;
             <div class="modal-body">
                 <div class="row">
                     <form method="post" action="login" class="col-xs-12">
+                        <!--<div class="form-group">
+                            <label for="name">Benutzername:</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Benutzernamen eingeben">
+                        </div>-->
                         <div class="form-group">
                             <label class="rbenutzername" for="name">Benutzername:</label>
                             <div class="random123">
