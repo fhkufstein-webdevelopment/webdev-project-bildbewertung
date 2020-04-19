@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-
 	<title><?php echo $this->title; ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet"> -->
-    <link href="css/login2.0.css" rel="stylesheet">
-    <link href="scss/login.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 	<?php if($this->current == "login"): ?>
-		<link href="css/login2.0.css" rel="stylesheet">
+		<link href="css/login.css" rel="stylesheet">
 	<?php endif; ?>
-		<link href="css/login2.0.css" rel="stylesheet">
+		<link href="css/login.css" rel="stylesheet">
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -30,25 +28,13 @@
 <body>
 	<div class="inner">
 		<div class="logo">
-            <div class="name">Show The World</div>
+                <div class="name">Show The World</div>
 		</div>
 		<?php if(LOGGED_IN == true): ?>
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<!--<div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-						<a href="/" class="navbar-brand active">Adressverwaltung</a>
-					</div>-->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul>
-							<a class="abmeldebutton" href="logout">Abmelden</a>
-						</ul>
+							<a class="abmeldebutton" href="logout" style="text-decoration: none;">Abmelden</a>
 						<p class="angemeldetals">Angemeldet als: <strong class="username"><?php echo $this->username; ?></strong></p>
 					</div>
 				</div>
